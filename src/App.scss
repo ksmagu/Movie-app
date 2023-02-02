@@ -1,0 +1,71 @@
+.navContainer {
+    display: flex;
+    flex-direction: column;
+
+    & .header {
+        background: radial-gradient(
+            circle,
+            rgba(59, 33, 89, 1) 0%,
+            rgba(12, 88, 177, 0.5359185910692401) 100%
+        );
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px;
+        font-size: 25px;
+        font-weight: bolder;
+        border-radius: 5px;
+        box-shadow: 0 3px 9px 0 #555;
+
+        @media all and (max-width: 480px) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    & .movieListContainer {
+        display: flex;
+        flex-flow: row wrap;
+        padding: 30px;
+        gap: 25px;
+        justify-content: center;
+    }
+
+    & .searchBox {
+        display: flex;
+        flex-direction: row;
+        padding: 10px 10px;
+        border-radius: 6px;
+        margin-left: 20px;
+        width: 50%;
+        background-color: white;
+    }
+
+    & .movieImage {
+        width: 40px;
+        height: 40px;
+        margin: 15px;
+    }
+
+    & .searchInput {
+        color: black;
+        font-size: 16px;
+        font-weight: bold;
+        border: none;
+        outline: none;
+        margin-left: 15px;
+        overflow: auto;
+    }
+
+    & .title {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    & .fillingText {
+        font-size: medium;
+    }
+}
